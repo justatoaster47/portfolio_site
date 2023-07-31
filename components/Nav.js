@@ -43,14 +43,14 @@ const Nav = () => {
       <nav
         className={`flex w-full items-center justify-center gap-10 h-30 text-2xl p-5 bg-transparent duration-300 transition-opacity ${ isVisible ? "opacity-100" : "opacity-0 "} `}
       >
-        <Link href="/About" className="hover:text-stone-700 transform"> 
-          About 
+        <Link href="#About" onClick={handleMouseLeave} className="hover:text-stone-700 "> 
+            About
         </Link>
-        <Link href="/Projects" className="hover:text-stone-700 transform">
-          Projects
+        <Link href="#Projects" onClick={handleMouseLeave} className="hover:text-stone-700 ">
+            Projects
         </Link>
-        <Link href="/Contact" className="hover:text-stone-700 transform">
-          Contact 
+        <Link href="#Contact" onClick={handleMouseLeave} className="hover:text-stone-700 ">
+            Contact 
         </Link>
       </nav>
 

@@ -21,7 +21,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="flex justify-center w-full h-screen bg-stone-400">
+    <div id='About' className="flex justify-center w-full h-screen bg-stone-400">
 
       <div className="flex h-screen bg-slate-800 w-2 m-5"></div>
 
