@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import dynamic from 'next/dynamic'; // This fixes hydration issues.
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Nav = () => {
 
@@ -27,34 +28,37 @@ const Nav = () => {
 
 
   return (
-    <header>
+    <header className='bg-transparent fixed top-0 w-full h-40 z-50'
+      onMouseLeave={handleMouseLeave} 
+    >
     
       <a href="/"> 
-        <Image src='/react-icon.png' alt='Logo' height={65} width={65} className='z-10 absolute p-5 '/>
+        <Image src='/react-icon.png' alt='Logo' height={80} width={80} className='z-10 absolute p-5'/>
       </a>
 
+      {/* <h1
+        className={`absolute flex justify-center w-full text-2xl p-5 transition-opacity ${ isVisible ? "opacity-0 " : "opacity-100"} `} 
+      >Developed By: Alexander Petro</h1> */}
 
       <nav
-        className={`flex items-center justify-center gap-10 h-30 p-5 bg-gradient-to-b from-gray-500 to-white duration-500 transition-opacity ${ isVisible ? "opacity-100" : "opacity-0"}`}
-        onMouseLeave={handleMouseLeave}
+        className={`flex w-full items-center justify-center gap-10 h-30 text-2xl p-5 bg-transparent duration-300 transition-opacity ${ isVisible ? "opacity-100" : "opacity-0 "} `}
       >
-
-        <a href="/#" className="hover:text-gray-600 transform">
+        <Link href="/About" className="hover:text-stone-700 transform"> 
+          About 
+        </Link>
+        <Link href="/Projects" className="hover:text-stone-700 transform">
           Projects
-        </a>
-        <a href="/#" className="hover:text-gray-600 transform">
-          Resume
-        </a>
-        <a href="/#" className="hover:text-gray-600 transform">
-          Contact
-        </a>
+        </Link>
+        <Link href="/Contact" className="hover:text-stone-700 transform">
+          Contact 
+        </Link>
       </nav>
 
       <button 
-        className='absolute bg-transparent border-none outline-none right-5 top-5 text-xl ' 
+        className='absolute bg-transparent border-none outline-none right-5 top-5 ' 
         onMouseEnter={handleMouseEnter}
       >
-        <FaBars />
+        <FaBars className='text-3xl'/>
       </button>
 
 		</header>
