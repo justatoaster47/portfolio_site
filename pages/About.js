@@ -21,30 +21,32 @@ const About = () => {
   }, []);
 
   return (
-    <div id='About' className="flex justify-center w-full h-screen bg-stone-400">
+    <div id='About' className="flex justify-center items-center w-full h-screen bg-stone-400">
 
-      <div className="flex h-screen bg-slate-800 w-2 m-5"></div>
 
-      <div className="flex-col w-3/4 h-3/4 bg-slate-200 text-7xl">
+      <div className="flex-col w-3/4 h-3/4 bg-slate-200 text-7xl ">
         <h1 className="flex justify-center">
           About
         </h1>
         <h1 className="flex justify-center ">
          __
         </h1>
-        <p className="flex text-xl pt-20 pb-20 p-10">
+        <p className="flex text-xl p-10">
           This section will contain a sentence or two about me, but mainly my skills and other professionally relevant information. Add some nice graphics and shit
         </p>
 
+        <p className='flex text-2xl w-full justify-center items-center pb-10 text-blue-400'>
+          <a>
+            Resume
+          </a>
+        </p>
 
-        <div className='flex text-2xl justify-center '>
+
+        <div className='flex-col text-2xl justify-center p-10'>
           <p className="flex justify-center text-2xl">
-            My skills include... 
+            My skills include: <span className='text-blue-400'>{hoveredSkill}</span>
           </p>
-
-          <p className='flex text-blue-400 pl-2 w-40 bg-transparent'>
-            {hoveredSkill}
-          </p>
+          
         </div>
         
        
@@ -57,12 +59,12 @@ const About = () => {
           <BiLogoCss3 onMouseEnter={() => handleHover(' CSS3')} />
           <BiLogoTailwindCss onMouseEnter={() => handleHover(' Tailwind')} />
           <DiPython onMouseEnter={() => handleHover(' Python')} />
-          
 
         </div>
 
       </div>
        
+      <div className="flex h-screen bg-slate-800 w-2 m-5"></div>
     
     </div>
   )

@@ -8,17 +8,35 @@ const Contact = () => {
     const mailtoLink = 'mailto: alexmpetro@gmail.com ';
 
   return (
-    <footer className="flex w-full h-35 gap-10 justify-center items-center text-2xl p-5 bg-stone-400 ">
-        <a href='https://github.com/justatoaster47' target='_blank'> {/*Target blank makes it open in new tab */} 
-            <FaGithub />
-        </a>
-        <a href={mailtoLink} className='hover:text-stone-700'>
+    <div id='Contact' className="flex justify-center items-center w-full h-screen bg-stone-400">
+
+
+      <div className="flex-col w-3/4 h-3/4 bg-slate-200 justify-center items-center text-7xl">
+        <h1 className="flex justify-center ">
+            Contact 
+        </h1>
+
+        <h1 className="flex justify-center ">
+        __
+        </h1>
+      
+        <a href={mailtoLink} className='hover:text-stone-700 flex flex-col items-center p-20 text-4xl pt-20'>
             <p > alexmpetro@gmail.com </p>
         </a>
-        <a href='https://www.linkedin.com/in/alexander-petro-73a183286/' target='_blank'>         
-            <FaLinkedin />
-        </a>
-    </footer>
+
+        <div className='flex justify-around '>
+          <a href='https://github.com/justatoaster47' target='_blank' > {/*Target blank makes it open in new tab */} 
+              <FaGithub />
+          </a>
+          <a href='https://www.linkedin.com/in/alexander-petro-73a183286/' target='_blank'>         
+              <FaLinkedin />
+          </a>
+          </div>
+        </div>
+
+      <div className="flex h-screen bg-slate-600 w-2 m-5"></div>
+
+    </div>
   )
 };
 
