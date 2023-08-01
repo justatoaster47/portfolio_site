@@ -1,5 +1,4 @@
 import '@styles/globals.css';
-import Nav from '@components/Nav';
 
 export const metadata = {
   title: '',
@@ -8,7 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang='en' className='font-worksans'>
       <body> { children } </body>
     </html>
   )
