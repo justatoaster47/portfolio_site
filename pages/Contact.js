@@ -19,6 +19,8 @@ const Contact = () => {
         <h1 className="flex justify-center ">
         __
         </h1>
+
+        <div className='flex-col justify-center items-center p-20 text-4xl'>
         
 
       
@@ -38,6 +40,7 @@ const Contact = () => {
           </div>
         </div>
 
+      </div>
 
     </div>
   )
