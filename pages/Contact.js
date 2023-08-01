@@ -19,12 +19,16 @@ const Contact = () => {
         <h1 className="flex justify-center ">
         __
         </h1>
-      
-        <a href={mailtoLink} className='hover:text-stone-700 flex flex-col items-center p-20 text-4xl pt-20'>
-            <p > alexmpetro@gmail.com </p>
-        </a>
+        
 
-        <div className='flex justify-around '>
+      
+        <div  className='flex justify-center items-center p-20 text-4xl pt-20'>
+            <a href={mailtoLink} className='flex hover:text-stone-700 justify-center items-center '>
+              alexmpetro@gmail.com 
+            </a>
+        </div>
+
+        <div className='flex justify-center gap-20 text-4xl '>
           <a href='https://github.com/justatoaster47' target='_blank' > {/*Target blank makes it open in new tab */} 
               <FaGithub />
           </a>
@@ -34,7 +38,6 @@ const Contact = () => {
           </div>
         </div>
 
-      <div className="flex h-screen bg-slate-600 w-2 m-5"></div>
 
     </div>
   )

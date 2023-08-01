@@ -8,7 +8,6 @@ const Projects = () => {
     <div id='Projects' className="flex justify-center items-center w-full h-screen bg-stone-400">
 
 
-    <div className="flex h-screen bg-slate-600 w-2 m-5"></div>
 
     <div className="flex-col w-3/4 h-3/4 bg-slate-200 text-7xl">
       <h1 className="flex justify-center">

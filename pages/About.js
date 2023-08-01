@@ -44,7 +44,7 @@ const About = () => {
 
         <div className='flex-col text-2xl justify-center p-10'>
           <p className="flex justify-center text-2xl">
-            My skills include: <span className='text-blue-400'>{hoveredSkill}</span>
+            My skills include: <span className='text-blue-400 pl-2'>{hoveredSkill}</span>
           </p>
           
         </div>
@@ -64,7 +64,6 @@ const About = () => {
 
       </div>
        
-      <div className="flex h-screen bg-slate-800 w-2 m-5"></div>
     
     </div>
   )

@@ -43,6 +43,9 @@ const Nav = () => {
       <nav
         className={`flex w-full items-center justify-center gap-10 h-30 text-2xl p-5 bg-transparent duration-300 transition-opacity ${ isVisible ? "opacity-100" : "opacity-0 "} `}
       >
+        <Link href="#Home" onClick={handleMouseLeave} className="hover:text-stone-700 "> 
+            Home
+        </Link>
         <Link href="#About" onClick={handleMouseLeave} className="hover:text-stone-700 "> 
             About
         </Link>
