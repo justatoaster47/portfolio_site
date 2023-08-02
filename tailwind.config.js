@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,11 +14,14 @@ module.exports = {
         worksans: ['Work Sans', 'sans-serif'],
       },
       colors: {
-        'text': '#0a140d',
-        'background': '#f5faf6',
-        'primary': '#71b7a9',
-        'secondary': '#c5d9e2',
-        'accent': '#497c92',
+        // 'text': '#000000',
+        'textcolor': colors.stone[900],
+        'hovertextcolor': colors.stone[700],
+        'background': colors.stone[400],
+        'primary': colors.neutral[200],
+        'secondary': colors.stone[600],
+        'third': colors.slate[400],
+        'accent': colors.blue[400],
       }
     },
   },

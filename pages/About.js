@@ -21,10 +21,10 @@ const About = () => {
   }, []);
 
   return (
-    <div id='About' className="flex justify-center items-center w-full h-screen bg-stone-400">
+    <div id='About' className="flex justify-center items-center w-full h-screen bg-background">
 
 
-      <div className="flex-col w-3/4 h-3/4 bg-slate-200 text-7xl ">
+      <div className="flex-col w-3/4 h-3/4 bg-primary text-7xl ">
         <h1 className="flex justify-center">
           About
         </h1>
@@ -35,16 +35,17 @@ const About = () => {
           This section will contain a sentence or two about me, but mainly my skills and other professionally relevant information. Add some nice graphics and shit
         </p>
 
-        <p className='flex text-2xl w-full justify-center items-center pb-10 text-blue-400'>
-          <a>
-            Resume
-          </a>
+        <p className='flex text-2xl w-full justify-center items-center pb-10 text-accent'>
         </p>
 
 
-        <div className='flex-col text-2xl justify-center p-10'>
-          <p className="flex justify-center text-2xl">
-            My skills include: <span className='text-blue-400 pl-2'>{hoveredSkill}</span>
+        <div className='flex-col text-2xl justify-center p-5'>
+          <p className="flex justify-center text-4xl">
+            Skills
+            {/* <span className='pl-2'>{hoveredSkill}</span> */}
+          </p>
+          <p className="flex justify-center italic text-xl h-5">
+            {hoveredSkill}
           </p>
           
         </div>
