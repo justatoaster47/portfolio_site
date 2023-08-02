@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { DiJavascript1, DiReact, DiHtml5, DiCss3Full, DiPython } from 'react-icons/di';
-import { BiLogoCss3, BiLogoTailwindCss } from 'react-icons/bi';
+import { DiJavascript1, DiReact, DiHtml5, DiVim, DiPython, DiGithubBadge } from 'react-icons/di';
+import { BiLogoCss3, BiLogoTailwindCss, BiGitMerge} from 'react-icons/bi';
+// import { HiCommandLine } from 'react-icons/hi';
+// import { TbBrandVscode } from 'react-icons/tb';
 
 const About = () => {
 
@@ -24,7 +26,7 @@ const About = () => {
     <div id='About' className="flex justify-center items-center w-full h-screen bg-background ">
 
 
-      <div className="flex-col w-3/4 h-3/4 bg-primary text-7xl rounded-lg">
+      <div className="flex-col w-3/4 h-3/4 bg-primary text-7xl rounded-lg items-center">
         <h1 className="flex justify-center">
           About
         </h1>
@@ -51,17 +53,29 @@ const About = () => {
         </div>
         
        
-        <div className="flex justify-around text-4xl pt-5"
+        <div className="flex justify-center gap-15 text-7xl pt-5 flex-wrap"
         onMouseLeave={() => handleHover('')}>
-
-          <DiReact onMouseEnter={() => handleHover(' React')} /> 
-          <DiJavascript1 onMouseEnter={() => handleHover(' Javascript')} />
+          
+          <DiReact onMouseEnter={() => handleHover('React')} /> 
+          <DiJavascript1 onMouseEnter={() => handleHover('Javascript')} />
           <DiHtml5 onMouseEnter={() => handleHover(' HTML5')} />
-          <BiLogoCss3 onMouseEnter={() => handleHover(' CSS3')} />
-          <BiLogoTailwindCss onMouseEnter={() => handleHover(' Tailwind')} />
-          <DiPython onMouseEnter={() => handleHover(' Python')} />
+          <BiLogoCss3 onMouseEnter={() => handleHover('CSS3')} />
+          <BiLogoTailwindCss onMouseEnter={() => handleHover('Tailwind')} />
 
         </div>
+
+        <div className="flex justify-center gap-15 text-7xl pt-5 flex-wrap"
+        onMouseLeave={() => handleHover('')}>
+
+          <DiPython onMouseEnter={() => handleHover('Python')} />
+          <DiVim onMouseEnter={() => handleHover('Vim')} />
+          {/* <HiCommandLine onMouseEnter={() => handleHover('Command Line')} /> */}
+          <DiGithubBadge onMouseEnter={() => handleHover('Github')} />
+          {/* <TbBrandVscode onMouseEnter={() => handleHover('VSCode')} /> */}
+          <BiGitMerge onMouseEnter={() => handleHover('Git')} />
+
+        </div>
+
 
       </div>
        
