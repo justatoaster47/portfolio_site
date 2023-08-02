@@ -21,10 +21,10 @@ const About = () => {
   }, []);
 
   return (
-    <div id='About' className="flex justify-center items-center w-full h-screen bg-background">
+    <div id='About' className="flex justify-center items-center w-full h-screen bg-background ">
 
 
-      <div className="flex-col w-3/4 h-3/4 bg-primary text-7xl ">
+      <div className="flex-col w-3/4 h-3/4 bg-primary text-7xl rounded-lg">
         <h1 className="flex justify-center">
           About
         </h1>

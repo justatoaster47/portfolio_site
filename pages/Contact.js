@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div id='Contact' className="flex justify-center items-center w-full h-screen bg-background">
 
-      <div className="flex-col w-3/4 h-3/4 bg-primary justify-center items-center text-7xl">
+      <div className="flex-col w-3/4 h-3/4 bg-primary justify-center items-center text-7xl rounded-lg">
         <h1 className="flex justify-center">
           Contact
         </h1>

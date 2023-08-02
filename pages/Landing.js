@@ -1,7 +1,7 @@
 const Landing = () => {
   return (
     <div id='Home' className="flex justify-center items-center w-full h-screen">
-      <div className="flex-col p-5 w-3/4 h-1/2 bg-primary">
+      <div className="flex-col p-5 w-3/4 h-1/2 bg-primary rounded-lg">
 
         <div className="flex w-full items-baseline text-2xl">
           <h1 className="flex text-4xl"> Hello there! </h1>
