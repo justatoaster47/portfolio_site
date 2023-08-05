@@ -23,37 +23,29 @@ const About = () => {
   }, []);
 
   return (
-    <div id='About' className="flex justify-center items-center w-full h-screen bg-background ">
+    <div id='About' className="mypage">
 
-
-      <div className="flex-col w-3/4 h-3/4 bg-primary text-7xl rounded-lg items-center">
-        <h1 className="flex justify-center">
+      <div className="mypagecontent flex-col">
+        <h1>
           About
         </h1>
-        <h1 className="flex justify-center ">
+        <h1>
          __
         </h1>
-        <p className="flex text-xl p-10">
+        <p className="mybody pt-5 md:pt-10">
           This section will contain a sentence or two about me, but mainly my skills and other professionally relevant information. Add some nice graphics and shit
         </p>
 
-        <p className='flex text-2xl w-full justify-center items-center pb-10 text-accent'>
-        </p>
-
-
-        <div className='flex-col text-2xl justify-center p-5'>
-          <p className="flex justify-center text-4xl">
+        <div className='flex-col text-2xl justify-center p-5 pb-2'>
+          <p className="flex justify-center text-lg md:text-4xl">
             Skills
-            {/* <span className='pl-2'>{hoveredSkill}</span> */}
           </p>
-          <p className="flex justify-center italic text-xl h-5">
+          <p className="flex justify-center italic text-sm md:text-xl h-5">
             {hoveredSkill}
           </p>
-          
         </div>
-        
        
-        <div className="flex justify-center gap-15 text-7xl pt-5 flex-wrap"
+        <div className="myicon"
         onMouseLeave={() => handleHover('')}>
           
           <DiReact onMouseEnter={() => handleHover('React')} /> 
@@ -64,7 +56,7 @@ const About = () => {
 
         </div>
 
-        <div className="flex justify-center gap-15 text-7xl pt-5 flex-wrap"
+        <div className="myicon"
         onMouseLeave={() => handleHover('')}>
 
           <DiPython onMouseEnter={() => handleHover('Python')} />
@@ -75,11 +67,7 @@ const About = () => {
           <BiGitMerge onMouseEnter={() => handleHover('Git')} />
 
         </div>
-
-
       </div>
-       
-    
     </div>
   )
 }

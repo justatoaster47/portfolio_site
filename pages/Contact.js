@@ -4,32 +4,31 @@ const Contact = () => {
   const mailtoLink = 'mailto:alexmpetro@gmail.com ';
 
   return (
-    <div id='Contact' className="flex justify-center items-center w-full h-screen bg-background">
+    <div id='Contact' className="mypage">
 
-      <div className="flex-col w-3/4 h-3/4 bg-primary justify-center items-center text-7xl rounded-lg">
-        <h1 className="flex justify-center">
+      <div className="mypagecontent">
+        <h1>
           Contact
         </h1>
-
-        <h1 className="flex justify-center">
+        <h1>
           __
         </h1>
 
-        <div className='flex-col justify-center items-center p-20 text-4xl'>
+        <div className='fcenter flex-col'>
 
-          <div className='flex justify-center items-center p-10 text-4xl pt-20'>
-            <a href={mailtoLink} className='flex hover:text-secondary justify-center items-center'>
+          <div className='fcenter pt-10 md:pt-20'>
+            <a href={mailtoLink} className='mybody hover:text-secondary '>
               alexmpetro@gmail.com
             </a>
           </div>
 
-          <div className='flex justify-center items-center p-20 text-3xl pt-20'>
+          <div className='mybody pt-5 md:pt-20 pb-5 md:pb-10'>
             <a href='/mock-resume.pdf' target='_blank' className='hover:text-secondary'>
               Resume
             </a>
           </div>
 
-          <div className='flex justify-center gap-20 text-4xl'>
+          <div className='myicon '>
             <a href='https://github.com/justatoaster47' target='_blank'>
               <FaGithub />
             </a>

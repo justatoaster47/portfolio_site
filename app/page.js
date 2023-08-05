@@ -6,9 +6,9 @@ import Contact from '@pages/Contact';
 
 const page = () => {
   return (
-    <section>
+    <section >
 
-      <Nav />
+      {/* <Nav /> */}
       <Landing />
       <About />
       <Projects />
