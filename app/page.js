@@ -8,7 +8,7 @@ const page = () => {
   return (
     <section >
 
-      {/* <Nav /> */}
+      <Nav />
       <Landing />
       <About />
       <Projects />

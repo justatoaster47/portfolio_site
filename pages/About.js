@@ -37,7 +37,7 @@ const About = () => {
         </p>
 
         <div className='flex-col text-2xl justify-center p-5 pb-2'>
-          <p className="flex justify-center text-lg md:text-4xl">
+          <p className="flex justify-center text-xl md:text-5xl">
             Skills
           </p>
           <p className="flex justify-center italic text-sm md:text-xl h-5">

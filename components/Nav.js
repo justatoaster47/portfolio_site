@@ -17,6 +17,10 @@ const Nav = () => {
     setIsVisible(false);
   };
 
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
   useEffect(() => {
     // Use useEffect only for client-side logic
     const isClient = typeof window !== 'undefined';
@@ -27,11 +31,12 @@ const Nav = () => {
 
   return (
     <header className='fixed top-0 w-full h-40 z-50 bg-transparent' onMouseLeave={handleMouseLeave}>
+
       {/* <a href="/">
         <Image src='/react-icon.png' alt='Logo' height={80} width={80} className='absolute z-10 p-5'/>
       </a> */}
 
-      <nav className={`flex w-full items-center justify-center gap-10 h-30 p-5 text-2xl duration-300 transition-opacity bg-transparent ${isVisible ? "opacity-100" : "opacity-0"}`}>
+      <nav className={`fcenter flex-col justify-center gap-10 min-h-30 p-5 text-2xl duration-300 transition-opacity bg-primary ${isVisible ? "opacity-100" : "opacity-0"} md:flex-row md:bg-transparent`}>
         <Link href="#Home" onClick={handleMouseLeave} className="hover:text-hovertextcolor">
           Home
         </Link>
@@ -46,9 +51,17 @@ const Nav = () => {
         </Link>
       </nav>
 
-      <button className='absolute top-5 right-5 bg-transparent border-none outline-none' onMouseEnter={handleMouseEnter}>
+      
+
+      <button className='absolute top-5 right-5 bg-transparent border-none outline-none hidden md:block' onMouseEnter={handleMouseEnter}>
         <FaBars className='text-4xl '/>
       </button>
+
+      <button className='absolute top-5 right-5 bg-transparent border-none outline-none md:hidden' onClick={toggleVisibility}>
+        <FaBars className='text-4xl '/>
+      </button>
+
+
     </header>
   );
 }
